@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagerMain"
+        android:layout_width="409dp"
+        android:layout_height="354dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Button
+        android:id="@+id/btnPager1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="183dp"
+        android:text="one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerMain" />
+
+    <Button
+        android:id="@+id/btnpager2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="180dp"
+        android:text="two"
+        app:layout_constraintStart_toEndOf="@+id/btnPager1"
+        app:layout_constraintTop_toBottomOf="@+id/pagerMain" />
+
+    <Button
+        android:id="@+id/btnpager3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="183dp"
+        android:text="Three"
+        app:layout_constraintStart_toEndOf="@+id/btnpager2"
+        app:layout_constraintTop_toBottomOf="@+id/pagerMain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
